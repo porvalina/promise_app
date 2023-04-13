@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <h1>Hello!</h1>
+    <h3>Create your promise!</h3>
+    <form action="/profile" method="post" class="form-create">
+        <p><label>My promise</label></p>
+        <p><textarea name="promise" rows=7 cols=40 required></textarea></p>
+        <p><label>I want submit this challenge until</label></p>
+        <p><input type="date" name="" value="" required /></p>
+        <p>by doing these steps:</p>
+        {%for i in range(0, numberOfTasks)%}
+            <p><textarea name="steps-{{ i }}" rows=4 cols=40 required></textarea></p>
+        {%endfor%}
+        
+        <a href="/addTask">add another step</a>
+        <p><input type="submit" value="Submit"/></p>
+    </form>
+</div>
+{% endblock %}

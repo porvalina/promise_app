@@ -1,0 +1,16 @@
+h1.mainmenu {
+    color: rgb(15, 14, 14);
+}
+
+header.mainmenu {
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
