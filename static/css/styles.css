@@ -3,7 +3,7 @@ h1.mainmenu {
 }
 
 header.mainmenu {
-    background-color: orange;
+    background-color: #fdc073;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -13,4 +13,37 @@ header.mainmenu {
     width: 80%;
     margin: auto;
     text-align: center;
+}
+
+ul.mainmenu li.last {
+    float:left;
+    padding: 20 px;
+}
+
+ul.mainmenu li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.mainmenu li a:hover {
+    color: #FDA83D;
+}
+
+.usermenu {
+    background-color: #fdc073;
+}
+
+.flash {
+    padding:10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.flash.success {
+    border: 1px solid #21DB56;
+    background: #AEFFC5;
+}
+.flash.error {
+    border: 1px solid #FF4343;
+    background: #FF9C9C;
 }
